@@ -3,7 +3,7 @@ IBM Cloud Monitoring with Sysdig es un sistema que permite obtener una visión o
 
 ## Índice  :bookmark_tabs:
 1. [Pre-Requisitos](#Pre-Requisitos-pencil).
-2. [Paso 1. Verificación de conectividad](#Paso-1.-Verificación-de-conectividad-white_check_mark).
+2. [Paso 1. Verificación de conectividad](#Verificación-de-conectividad-white_check_mark).
 3. [Paso 2. Ingreso a interfaz gráfica](#Paso-2.-Ingreso-a-interfaz-gráfica-globe_with_meridians).
 4. [Paso 3. Instalación de herramienta Prometheus y selección de colectores](#Paso-3.-Instalación-de-herramienta-Prometeus-y-selección-de-colectores-paperclip)
 5. [Paso 4. Recopilación de métricas ejecutando Prometheus](#Paso-4.-Recopilación-de-métricas-ejecutando-Prometheus-hammer)
