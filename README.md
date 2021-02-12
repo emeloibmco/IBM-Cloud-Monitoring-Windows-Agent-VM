@@ -24,6 +24,48 @@ Para monitorear un sistema Windows con *IBM Cloud Monitoring with Sysdig* se emp
 
 1. Descargue el sistema de supervisión [*prometheus-2.24.1.windows-amd64.zip*.](https://prometheus.io/download/)
 2. Descomprima el archivo descargado y guardelo en una carpeta a la que pueda acceder fácilmente.
-3. Cree un archivo llamado *sysdigapikey* en un bloc de notas, agregue el *Sysdig Monitor API Token* que lo puede encontrar como se observa en la imagen y guarde el archivo en la misma carpeta del paso 2. Posteriormente abra una ventana en *PowerShell*, ingrese a la carpeta donde se encuentra ubicado el archivo y copie el siguiente comando
+3. Cree un archivo llamado *sysdigapikey* en un bloc de notas, agregue el *Sysdig Monitor API Token* (que lo puede encontrar como se observa en la imagen) y guarde el archivo en la misma carpeta del paso 2. Posteriormente abra una ventana en *PowerShell*, ingrese a la carpeta donde se encuentra ubicado el archivo y copie el siguiente comando
 **_.\sysdigapikey.txt sysdigapikey_**. Con este comando puede eliminar la extensión .txt del archivo creado.
+4. Ingrese a la carpeta del paso 2 y busque el archivo *prometheus.yml*. Abralo en un block de notas sin cambiar el formato y coloque el siguiente código, modificando sus variables.
+
+# my global config
+global:
+  scrape_interval:     15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
+  # scrape_timeout is set to the global default (10s).
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets:
+      # - alertmanager:9093
+
+# Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
+rule_files:
+  # - "first_rules.yml"
+  # - "second_rules.yml"
+
+# A scrape configuration containing exactly one endpoint to scrape:
+# Here it's Prometheus itself.
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  - job_name: 'wmi_exporter'
+
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+
+    static_configs:
+    - targets: ['localhost:9182']
+
+      labels:
+        region: "<REGION>"
+        instance: "<HOSTNAME>"
+        job: "<JOBNAME>"
+
+remote_write:
+  - url: "ENDPOINT/api/prometheus/write"
+
+    bearer_token_file: C:\Users\Administrator\Downloads\sysdigapikey
+
 
