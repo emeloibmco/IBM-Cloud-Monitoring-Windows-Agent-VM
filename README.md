@@ -30,7 +30,7 @@ Para monitorear un sistema Windows con *IBM Cloud Monitoring with Sysdig* se emp
 ```
    Con este comando puede eliminar la extensión .txt del archivo creado. 
 
-4. Ingrese a la carpeta del paso 2 y busque el archivo *prometheus.yml*. Abralo en un bloc de notas sin cambiar el formato y modifique la sección *scrape_configs*, con la siguiente información:
+4. Ingrese a la carpeta del paso 2 y busque el archivo *prometheus.yml*. Abralo en un bloc de notas sin cambiar el formato y modifique la sección *scrape_configs*, de la siguiente manera:
 ```
 scrape_configs:
   # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
@@ -52,7 +52,9 @@ remote_write:
 
     bearer_token_file: C:\Users\Administrator\Downloads\sysdigapikey
 ```
-
+Donde,
+- <REGION> corresponde a la región. Un ejemplo puede ser *us_south.*
+ 
 
 
 
