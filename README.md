@@ -19,4 +19,4 @@ Paso 6. Visualizar dashboard (D)
 
 
 
-## Paso 4. Recopilar métricas ejecutando Prometehus.
+## Paso 4. Recopilar métricas ejecutando Prometehus :hammer:
