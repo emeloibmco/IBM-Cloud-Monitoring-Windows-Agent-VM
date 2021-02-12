@@ -1,2 +1,2 @@
 # IBM-Cloud-Monitoring-Windows-Agent-VM
-![] (prueba_Trim.gif)
+![](prueba_Trim.gif)
