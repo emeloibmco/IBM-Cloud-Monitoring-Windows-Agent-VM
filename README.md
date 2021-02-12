@@ -29,8 +29,10 @@ La VPN debe permanecer conectada durante el proceso.
 
 ## Paso 2
 ### Ingreso a interfaz gráfica :globe_with_meridians:
-Para acceder a la interfaz gráfica de la VSI Linux se puede emplear la herramienta **Remote Desktop**, y en Add > PCs agregar el acceso a la VSI mediante la IP privada de la máquina. 
-<p align="center"><img width="300" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/windowssysdig/Paso2.gif"></p>
+Para acceder a la interfaz gráfica de la VSI Linux se puede emplear la herramienta **Remote Desktop**, y en Add > PCs agregar el acceso a la VSI mediante la IP privada de la máquina.<br>
+Una vez se cuenta con el acceso, se debe ingresar el 
+
+<p align="center"><img width="600" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/windowssysdig/Paso2.gif"></p>
 ## Paso 3
 ### Instalación de herramienta Prometheus y selección de colectores  :paperclip:
 
