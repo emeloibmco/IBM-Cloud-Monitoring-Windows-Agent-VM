@@ -72,7 +72,7 @@ Para ejecutar *Prometheus*, abra una ventana de *PowerShell* y acceda a la carpe
 ```
 .\prometheus.exe 
 ```
-**_NOTA 1_**: Es importante que los colectores del **Paso 3**, se estén ejecutando. 
-**_NOTA 2_**: Una vez ejecute *Prometheus*, no cierre la ventana la de *PowerShell*.
+>**_NOTA 1_**: Es importante que los colectores del **Paso 3**, se estén ejecutando. 
+>**_NOTA 2_**: Una vez ejecute *Prometheus*, no cierre la ventana la de *PowerShell*.
 
 
