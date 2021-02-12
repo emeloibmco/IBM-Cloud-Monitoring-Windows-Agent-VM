@@ -11,7 +11,8 @@ IBM Cloud Monitoring with Sysdig es un sistema que permite obtener una visión o
 7. [Paso 6. Visualización de métricas en Sysdig](#Paso-6.-Visualización-de-métricas-en-Sysdig-chart_with_upwards_trend)
 
 ## Pre-Requisitos :pencil:
-## Paso 1. Verificación de conectividad :white_check_mark:
+## Paso 1 
+### Verificación de conectividad :white_check_mark:
 ## Paso 2. Ingreso a interfaz gráfica :globe_with_meridians:
 ## Paso 3. Instalación de herramienta Prometheus y selección de colectores  :paperclip:
 ## Paso 4. Recopilación de métricas ejecutando Prometheus :hammer:
