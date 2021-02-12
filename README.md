@@ -3,26 +3,22 @@ IBM Cloud Monitoring with Sysdig es un sistema que permite obtener una visión o
 
 ## Índice  :bookmark_tabs:
 1. [Pre-Requisitos](#Pre-Requisitos-pencil).
-2. [Paso 1. Verificación de conectividad](#Paso-1).
-3. [Paso 2. Ingreso a interfaz gráfica](#Paso-2).
-4. [Paso 3. Instalación de herramienta Prometheus y selección de colectores](#Paso-3)
-5. [Paso 4. Recopilación de métricas ejecutando Prometheus](#Paso-4)
-6. [Paso 5. Ejecución de Prometheus](#Paso-5)
-7. [Paso 6. Visualización de métricas en Sysdig](#Paso-6)
+2. [Paso 1. Verificación de conectividad](#Paso-1-Verificación-de-conectividad-white_check_mark).
+3. [Paso 2. Ingreso a interfaz gráfica](#Paso-2-Ingreso-a-interfaz-gráfica-globe_with_meridians).
+4. [Paso 3. Instalación de herramienta Prometheus y selección de colectores](#Paso-3-Instalación-de-herramienta-Prometeus-y-selección-de-colectores-paperclip)
+5. [Paso 4. Recopilación de métricas ejecutando Prometheus](#Paso-3-Recopilación-de-métricas-ejecutando-Prometheus-hammer)
+6. [Paso 5. Ejecución de Prometheus](#Paso-4-Ejecución-de-Prometheus-heavy_check_mark)
+7. [Paso 6. Visualización de métricas en Sysdig](#Paso-5-Visualización-de-métricas-en-Sysdig-chart_with_upwards_trend)
 
 ## Pre-Requisitos :pencil:
-## Paso 1
-### Verificación de conectividad :white_check_mark:
-## Paso 2
-### Ingreso a interfaz gráfica :globe_with_meridians:
-## Paso 3
-### Instalación de herramienta Prometheus y selección de colectores  :paperclip:
+## Paso 1. Verificación de conectividad :white_check_mark:
+## Paso 2. Ingreso a interfaz gráfica :globe_with_meridians:
+## Paso 3. Instalación de herramienta Prometheus y selección de colectores  :paperclip:
 
 
 
 
-## Paso 4
-### Recopilación de métricas ejecutando Prometheus :hammer:
+## Paso 4. Recopilación de métricas ejecutando Prometheus :hammer:
 Para monitorear un sistema Windows con *IBM Cloud Monitoring with Sysdig* se emplea *Prometheus*, que es un sistema de supervisión para enviar y recopilar las métricas desde Windows. A continuación, se presentan los pasos para realizar la recopilación.
 
 1. Descargue el sistema de supervisión [*prometheus-2.24.1.windows-amd64.zip*.](https://prometheus.io/download/) 
@@ -75,8 +71,7 @@ Donde,
 <p align="center"><img width="520" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/windowssysdig/metricas.gif"></p>
 
 
-## Paso 5
-### Ejecución de Prometheus :heavy_check_mark:
+## Paso 5. Ejecución de Prometheus :heavy_check_mark:
 Para ejecutar *Prometheus*, abra una ventana de *PowerShell* y acceda a la carpeta en donde se encuentran los archivos. Posteriormente ejecute el comando:
 ```
 .\prometheus.exe 
@@ -85,9 +80,10 @@ Para ejecutar *Prometheus*, abra una ventana de *PowerShell* y acceda a la carpe
 
 >**_NOTA 2_**: Una vez ejecute *Prometheus*, no cierre la ventana la de *PowerShell*.
 
-## Paso 6
-### Visualización de métricas de Windows en Sysdig :chart_with_upwards_trend:
+## Paso 6. Visualización de métricas de Windows en Sysdig :chart_with_upwards_trend:
 Para visualizar las métricas de Sysdig en la plataforma [IBM Cloud](https://cloud.ibm.com/login), ingrese a *Observabilidad* y posteriormente a *Supervisión*. Dirijase a la opción *visualizar panel de control* y de click en *Visualizar Sysdig*. Un vez se encuentre en la ventana del agente Sysdig, seleccione la pestaña *Dashboards* y en el ícono de búsqueda :mag_right: escriba *Windows Node Overview*. Si realizó todos los pasos de manera correcta podrá visualizar resultados similares a los que se muestran en la siguiente imagen.
+<p align="center"><img width="520" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/windowssysdig/'Windows%20Node%20Overview%20-%20Dashboards%20-%20Sysdig'%20.jpg"></p>
+
 
 >**_NOTA_**: En caso de no poder visualizar la opción de *Windows Node Overview* de forma inmediada a la ejecución de *Prometheus*, por favor tenga paciencia. La visualización de las métricas puede tardar varios minutos.
 
