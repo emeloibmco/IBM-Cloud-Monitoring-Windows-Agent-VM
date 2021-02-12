@@ -56,7 +56,10 @@ Donde,
 - REGION es la región. Un ejemplo puede ser *us_south.*
 - HOSTNAME es el nombre del sistema Windows.
 - JOBNAME es un atributo personalizado que identifica el rol del nodo cuyos datos está recopilando.
-- ENDPOINT es el punto final del recopilador de Sysdig y se determina según la región. Para ver la lista de puntos finales consulta [Regiones y Puntos Finales](https://cloud.ibm.com/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-endpoints#endpoints_ingestion).
+- ENDPOINT es el punto final del recopilador de Sysdig y se determina según la región. Para ver la lista de puntos finales consulte [Regiones y Puntos Finales](https://cloud.ibm.com/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-endpoints#endpoints_ingestion).
+
+**NOTA**
+Como puede observar en este caso el archivo sysdigapikey se encuentra ubicado en la carpeta de descargas. Coloque la ubicación del archivo en base a su carpeta.
  
 
 
