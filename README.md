@@ -1,2 +1,3 @@
 # IBM-Cloud-Monitoring-Windows-Agent-VM
-![](prueba_Trim.gif)
+<img width="520" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/prueba_Trim.gif">
+
