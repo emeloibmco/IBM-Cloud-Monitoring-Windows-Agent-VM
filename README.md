@@ -22,4 +22,4 @@ Paso 6. Visualizar dashboard (D)
 ## Paso 4. Recopilar métricas ejecutando Prometehus :hammer:
 Para monitorear un sistema Windows con *IBM Cloud Monitoring with Sysdig* se emplea *Prometheus*, que es un sistema de supervisión para enviar y recopilar las métricas desde Windows. A continuación, se presentan los pasos para realizar la recopilación.
 
-1. 
+### 1. Descargar el sistema de supervisión *Prometheus*
