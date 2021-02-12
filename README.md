@@ -26,7 +26,7 @@ Para monitorear un sistema Windows con *IBM Cloud Monitoring with Sysdig* se emp
 2. Descomprima el archivo descargado y guardelo en una carpeta a la que pueda acceder fácilmente. 
 3. Cree un archivo llamado *sysdigapikey* en un bloc de notas, agregue el *Sysdig Monitor API Token* (que lo puede encontrar como se observa en la imagen) y guarde el archivo en la misma carpeta del paso 2. Posteriormente abra una ventana en *PowerShell*, ingrese a la carpeta donde se encuentra ubicado el archivo y copie el siguiente comando 
 ```
-copy .\sysdigapikey.txt sysdigapikey
+.\sysdigapikey.txt sysdigapikey
 ```
    Con este comando puede eliminar la extensión .txt del archivo creado. 
 
@@ -53,7 +53,10 @@ remote_write:
     bearer_token_file: C:\Users\Administrator\Downloads\sysdigapikey
 ```
 Donde,
-- <REGION> corresponde a la región. Un ejemplo puede ser *us_south.*
+- REGION es la región. Un ejemplo puede ser *us_south.*
+- HOSTNAME es el nombre del sistema Windows.
+- JOBNAME es un atributo personalizado.
+- ENDPOINT 
  
 
 
