@@ -96,19 +96,6 @@ Para visualizar las métricas de Sysdig en la plataforma [IBM Cloud](https://clo
 
 >**_NOTA_**: En caso de no poder visualizar la opción de *Windows Node Overview* de forma inmediada a la ejecución de *Prometheus*, por favor tenga paciencia. La visualización de las métricas puede tardar varios minutos.
 
-Paso 1. Configuracion Motionpro y ping (P)
-Paso 2. remote (P)
-Paso 3. prometheus wmi (P)
-Paso 4. recopilar métricas opción 2 (D)
--Descargar el .zip
--Crear archivo apikey
--Editar archivo prometheus
--Habilitar metricas de sysdig
-Paso 5. Ejecutar y esperar (D)
-Paso 6. Visualizar dashboard (D)
-
-
-<p align="center"><img width="520" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/prueba_Trim.gif"></p>
 
 
 
