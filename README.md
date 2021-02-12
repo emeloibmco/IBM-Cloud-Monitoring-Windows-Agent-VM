@@ -72,7 +72,7 @@ Para ejecutar *Prometheus*, abra una ventana de *PowerShell* y acceda a la carpe
 >**_NOTA 2_**: Una vez ejecute *Prometheus*, no cierre la ventana la de *PowerShell*.
 
 ## Paso 6. Visualización de métricas de Windows en Sysdig :chart_with_upwards_trend:
-Para visualizar las métricas de Sysdig en la plataforma [IBM Cloud](https://cloud.ibm.com/login), ingrese a *Observabilidad* y posteriormente a *Supervisión*. Dirijase a la opción visualizar panel de control y de click en *Visualizar Sysdig*. Un vez se encuentre en la ventana del agente Sysdig, seleccione la pestaña *Dashboards*y en el ícono de búsqueda :mag_right: escriba *Windows Node Overview*. Si realizó todos los pasos de manera correcta podrá visualizar resultados similares a los que se muestran en la siguiente imagen.
+Para visualizar las métricas de Sysdig en la plataforma [IBM Cloud](https://cloud.ibm.com/login), ingrese a *Observabilidad* y posteriormente a *Supervisión*. Dirijase a la opción *visualizar panel de control* y de click en *Visualizar Sysdig*. Un vez se encuentre en la ventana del agente Sysdig, seleccione la pestaña *Dashboards* y en el ícono de búsqueda :mag_right: escriba *Windows Node Overview*. Si realizó todos los pasos de manera correcta podrá visualizar resultados similares a los que se muestran en la siguiente imagen.
 
 >**_NOTA_**: En caso de no poder visualizar la opción de *Windows Node Overview* de forma inmediada a la ejecución de *Prometheus*, por favor tenga paciencia. La visualización de las métricas puede tardar varios minutos.
 
