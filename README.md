@@ -86,4 +86,4 @@ Para ejecutar *Prometheus*, abra una ventana de *PowerShell* y acceda a la carpe
 
 
 ## Paso 6. Visualizar Dashboard :chart_with_upwards_trend:
-Hola.
+Para visualizar y supervisar las métricas del sistema Windows, dentro de la plataforma plataforma [IBM Cloud](https://cloud.ibm.com/login), ingrese a *Observabilidad* y posteriormente *Supervisión*. Dirijase a la opción *Visualizar Control de Panel* y elija allpi la opción *Visualizar Sysgid*. Una vez se abre la ventana del agente Sysdig, de click en la pestaña *Dashboards* y en el ícono de búsqueda (:mag_right:) escriba *Windows Node Overview*.
