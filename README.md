@@ -36,7 +36,9 @@ Para monitorear un sistema Windows con *IBM Cloud Monitoring with Sysdig* se emp
 ```
 .\sysdigapikey.txt sysdigapikey
 ```
-   Con este comando puede eliminar la extensión .txt del archivo creado. 
+   Con este comando puede realizar una copia del mismo archivo sin ninguna extensión determinada.
+   <p align="center"><img width="520" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/windowssysdig/apitoken.gif"></p>
+   
 
 4. Ingrese a la carpeta del paso 2 y busque el archivo *prometheus.yml*. Abralo en un bloc de notas sin cambiar el formato y modifique la sección *scrape_configs*, de la siguiente manera:
 ```
