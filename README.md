@@ -24,7 +24,8 @@ Para añadir una nueva conexion VPN seleccione **Add profile**. A continuación,
 
 Nota: Para consultar el **host** según la región consulte <a href="https://cloud.ibm.com/docs/iaas-vpn?topic=iaas-vpn-available-vpn-endpoints">Puntos finales de VPN disponibles</a>. El **username** y **password** se pueden consultar en la plataforma de IBM Cloud Catalogo > Acceso (IAM) > Usuarios. <br>
 Una vez termine la configuración, podrá conectar la VPN. Para confirmar que la conexión es correcta puede realizar PING a la IP de la VSI.
-<p align="center"><img width="600" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/windowssysdig/ping.JPG"></p>
+<p align="center"><img width="300" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/windowssysdig/ping.JPG"></p>
+<br>
 ## Paso 2
 ### Ingreso a interfaz gráfica :globe_with_meridians:
 ## Paso 3
