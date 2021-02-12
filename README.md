@@ -30,7 +30,7 @@ Para monitorear un sistema Windows con *IBM Cloud Monitoring with Sysdig* se emp
 ```
    Con este comando puede eliminar la extensión .txt del archivo creado. 
 
-4. Ingrese a la carpeta del paso 2 y busque el archivo *prometheus.yml*. Abralo en un block de notas sin cambiar el formato y modifique la sección *scrape_configs*, con la siguiente información:
+4. Ingrese a la carpeta del paso 2 y busque el archivo *prometheus.yml*. Abralo en un bloc de notas sin cambiar el formato y modifique la sección *scrape_configs*, con la siguiente información:
 ```
 scrape_configs:
   # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
@@ -43,12 +43,12 @@ scrape_configs:
     - targets: ['localhost:9182']
 
       labels:
-        region: "us-south"
-        instance: "vsi-windows-sd"
-        job: "windows"
+        region: "<REGION>"
+        instance: "<HOSTNAME>"
+        job: "<JOBNAME>"
 
 remote_write:
-  - url: "https://ingest.us-south.monitoring.cloud.ibm.com/api/prometheus/write"
+  - url: "ENDPOINT/api/prometheus/write"
 
     bearer_token_file: C:\Users\Administrator\Downloads\sysdigapikey
 ```
