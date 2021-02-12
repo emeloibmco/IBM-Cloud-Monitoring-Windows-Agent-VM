@@ -22,14 +22,15 @@ El acceso VPN de IBM Cloud permite a los usuarios gestionar todos los servidores
 Para añadir una nueva conexion VPN seleccione **Add profile**. A continuación, ingrese: **site name**, **host**, **username** y **password**. Verfique que **mode** este en VPN. <br>
 <p align="center"><img width="600" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/windowssysdig/Paso1.gif"></p>
 
-Nota: Para consultar el **host** según la región consulte <a href="https://cloud.ibm.com/docs/iaas-vpn?topic=iaas-vpn-available-vpn-endpoints">Puntos finales de VPN disponibles</a>. El **username** y **password** se pueden consultar en la plataforma de IBM Cloud Catalogo > Acceso (IAM) > Usuarios. <br>
+Nota: Para consultar el **host** según la región consulte <a href="https://cloud.ibm.com/docs/iaas-vpn?topic=iaas-vpn-available-vpn-endpoints">Puntos finales de VPN disponibles</a>. El **username** y **password** se pueden consultar en la plataforma de IBM Cloud Catalogo > Acceso (IAM) > Usuarios > Detalles de Usuario > Contraseña de VPN . <br>
 Una vez termine la configuración, podrá conectar la VPN. Para confirmar que la conexión es correcta puede realizar PING a la IP de la VSI.
 <p align="center"><img width="300" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/windowssysdig/ping.JPG"></p>
 La VPN debe permanecer conectada durante el proceso.
 
 ## Paso 2
 ### Ingreso a interfaz gráfica :globe_with_meridians:
-H
+Para acceder a la interfaz gráfica de la VSI Linux se puede emplear la herramienta **Remote Desktop**, y en Add > PCs agregar el acceso a la VSI mediante la IP privada de la máquina. 
+<p align="center"><img width="300" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/windowssysdig/Paso2.gif"></p>
 ## Paso 3
 ### Instalación de herramienta Prometheus y selección de colectores  :paperclip:
 
