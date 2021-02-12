@@ -68,10 +68,11 @@ Donde,
  
  
 ## Paso 5. Ejecutar Prometehus :heavy_check_mark:
-Para ejecutar el *Prometheus*, abra una ventana de *PowerShell* y acceda a la carpeta en donde se encuentran los archivos. Posteriormente ejecue el comando:
+Para ejecutar *Prometheus*, abra una ventana de *PowerShell* y acceda a la carpeta en donde se encuentran los archivos. Posteriormente ejecute el comando:
 ```
 .\prometheus.exe 
 ```
-**_NOTA_**: Es importante que los colectores del **Paso 3**, se estén ejecutando. 
+**_NOTA 1_**: Es importante que los colectores del **Paso 3**, se estén ejecutando. 
+**_NOTA 2_**: Una vez ejecute *Prometheus*, no cierre la ventana la de *PowerShell*.
 
 
