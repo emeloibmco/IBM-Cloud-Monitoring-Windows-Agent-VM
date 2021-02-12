@@ -5,7 +5,7 @@ IBM Cloud Monitoring with Sysdig es un sistema que permite obtener una visión o
 1. [Pre-Requisitos](#Pre-Requisitos-pencil).
 2. [Verificación de conectividad](#Verificación-de-conectividad).
 3. [Ingreso a interfaz gráfica](#Ingreso-a-interfaz-gráfica).
-4. [Recopilación de métricas](#Recopilación-de-métricas)
+4. [Recopilación de métricas](#Recopilación-de-métricas-hammer).
 
 ## Pre-Requisitos :pencil:
 ## Verificación de conectividad :white_check_mark:
