@@ -21,8 +21,8 @@ IBM Cloud Monitoring with Sysdig es un sistema que permite obtener una visión o
 El acceso VPN de IBM Cloud permite a los usuarios gestionar todos los servidores de forma remota y segura en la red privada de IBM Cloud. Para tener acceso remoto a la VSI de Windows se debe establecer primero la conexion VPN, esta se realiza por medio de **MotionPro**. 
 Para añadir una nueva conexion VPN seleccione **Add profile**. A continuación, ingrese: **site name**, **host**, **username** y **password**. Verfique que **mode** este en VPN. <br>
 
-Nota: Para consultar el **host** según la región consulte <a href="https://cloud.ibm.com/docs/iaas-vpn?topic=iaas-vpn-available-vpn-endpoints">Puntos finales de VPN disponibles</a>. El **username** y **password** se puede consultar en la plataforma de IBM Cloud Catalogo > Acceso (IAM) > Usuarios. <br>
-Una vez termine la configuración, podrá conectar la VPN, para confirmar que la conexión es correcta puede realizar PING a la IP de la VSI.
+Nota: Para consultar el **host** según la región consulte <a href="https://cloud.ibm.com/docs/iaas-vpn?topic=iaas-vpn-available-vpn-endpoints">Puntos finales de VPN disponibles</a>. El **username** y **password** se pueden consultar en la plataforma de IBM Cloud Catalogo > Acceso (IAM) > Usuarios. <br>
+Una vez termine la configuración, podrá conectar la VPN. Para confirmar que la conexión es correcta puede realizar PING a la IP de la VSI.
 ## Paso 2
 ### Ingreso a interfaz gráfica :globe_with_meridians:
 ## Paso 3
