@@ -77,3 +77,7 @@ Para ejecutar *Prometheus*, abra una ventana de *PowerShell* y acceda a la carpe
 >**_NOTA 2_**: Una vez ejecute *Prometheus*, no cierre la ventana la de *PowerShell*.
 
 
+## Paso 6. Visualizar Dashboard :chart_with_upwards_trend:
+
+
+
