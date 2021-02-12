@@ -31,10 +31,9 @@ Para monitorear un sistema Windows con *IBM Cloud Monitoring with Sysdig* se emp
    Con este comando puede eliminar la extensión .txt del archivo creado. 
 
 4. Ingrese a la carpeta del paso 2 y busque el archivo *prometheus.yml*. Abralo en un block de notas sin cambiar el formato y modifique la sección *scrape_configs*, con la siguiente información:
-
-
-
-[#] Hola
+```
+# Hola
+```
 
 
 
