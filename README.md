@@ -2,13 +2,13 @@
 IBM Cloud Monitoring with Sysdig es un sistema que permite obtener una visión operativa ofreciendo funciones de supervisión, solución de problemas, definición de alertas y diseñar paneles personalizados. Esta guía esta enfocada a supervisar un entorno Windows con IBM Cloud Monitoring with Sysdig, se debe tener en cuenta que el agente sysdig no se puede instalar en una plataforma Windows, por ello se debe instalar la herramienta llamada Prometheus WMI Exporter para obtener las métricas del sistema Windows.
 
 ## Índice  :bookmark_tabs:
-[Pre-Requisitos](#Pre-Requisitos-pencil).
-[Paso 1. Verificación de conectividad](#Paso-1-Verificación-de-conectividad-white_check_mark).
-[Paso 2. Ingreso a interfaz gráfica](#Paso-2-Ingreso-a-interfaz-gráfica-globe_with_meridians).
-[Paso 3. Instalación de herramienta Prometheus y selección de colectores](#Paso-3-Instalación-de-herramienta-Prometeus-y-selección-de-colectores-paperclip)
-[Paso 4. Recopilación de métricas ejecutando Prometheus](#Paso-3-Recopilación-de-métricas-ejecutando-Prometheus-hammer)
-[Paso 5. Ejecución de Prometheus](#Paso-4-Ejecución-de-Prometheus-heavy_check_mark)
-[Paso 6. Visualización de métricas en Sysdig](#Paso-5-Visualización-de-métricas-en-Sysdig-chart_with_upwards_trend)
+1. [Pre-Requisitos](#Pre-Requisitos-pencil).
+2. [Paso 1. Verificación de conectividad](#Paso-1-Verificación-de-conectividad-white_check_mark).
+3. [Paso 2. Ingreso a interfaz gráfica](#Paso-2-Ingreso-a-interfaz-gráfica-globe_with_meridians).
+4. [Paso 3. Instalación de herramienta Prometheus y selección de colectores](#Paso-3-Instalación-de-herramienta-Prometeus-y-selección-de-colectores-paperclip)
+5. [Paso 4. Recopilación de métricas ejecutando Prometheus](#Paso-3-Recopilación-de-métricas-ejecutando-Prometheus-hammer)
+6. [Paso 5. Ejecución de Prometheus](#Paso-4-Ejecución-de-Prometheus-heavy_check_mark)
+7. [Paso 6. Visualización de métricas en Sysdig](#Paso-5-Visualización-de-métricas-en-Sysdig-chart_with_upwards_trend)
 
 ## Pre-Requisitos :pencil:
 ## Paso 1. Verificación de conectividad :white_check_mark:
