@@ -1,6 +1,14 @@
-# IBM-Cloud-Monitoring-Windows-Agent-VM :cloud:
-Introducción
-Requisitos
+# IBM-Cloud-Monitoring-Windows-Agent-VM :cloud: :computer:
+IBM Cloud Monitoring with Sysdig es un sistema que permite obtener una visión operativa ofreciendo funciones de supervisión, solución de problemas, definición de alertas y diseñar paneles personalizados. Esta guía esta enfocada a supervisar un entorno Windows con IBM Cloud Monitoring with Sysdig, se debe tener en cuenta que el agente sysdig no se puede instalar en una plataforma Windows, por ello se debe instalar la herramienta llamada Prometheus WMI Exporter para obtener las métricas del sistema Windows.
+
+## Índice  :bookmark_tabs:
+1. [Pre-Requisitos](#Pre-Requisitos).
+2. [Verificación de conectividad](#Verificación-de-conectividad).
+3. [Ingreso a interfaz gráfica](#Ingreso-a-interfaz-gráfica).
+4. [Recopilación de métricas]()
+
+## Pre-Requisitos :pencil:
+## Verificación de conectividad :white_check_mark:
 Contenido
 # [Imagen](#Imagen)
 Paso 1. Configuracion Motionpro y ping (P)
@@ -75,9 +83,5 @@ Para ejecutar *Prometheus*, abra una ventana de *PowerShell* y acceda a la carpe
 >**_NOTA 1_**: Es importante que los colectores del **Paso 3**, se estén ejecutando. 
 
 >**_NOTA 2_**: Una vez ejecute *Prometheus*, no cierre la ventana la de *PowerShell*.
-
-
-## Paso 6. Visualizar Dashboard :chart_with_upwards_trend:
-
 
 
