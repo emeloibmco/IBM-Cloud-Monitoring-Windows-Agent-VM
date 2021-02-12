@@ -32,7 +32,25 @@ Para monitorear un sistema Windows con *IBM Cloud Monitoring with Sysdig* se emp
 
 4. Ingrese a la carpeta del paso 2 y busque el archivo *prometheus.yml*. Abralo en un block de notas sin cambiar el formato y modifique la sección *scrape_configs*, con la siguiente información:
 ```
-# Hola
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  - job_name: 'wmi_exporter'
+
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+
+    static_configs:
+    - targets: ['localhost:9182']
+
+      labels:
+        region: "us-south"
+        instance: "vsi-windows-sd"
+        job: "windows"
+
+remote_write:
+  - url: "https://ingest.us-south.monitoring.cloud.ibm.com/api/prometheus/write"
+
+    bearer_token_file: C:\Users\Administrator\Downloads\sysdigapikey
 ```
 
 
