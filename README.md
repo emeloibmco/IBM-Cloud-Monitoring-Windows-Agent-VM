@@ -4,7 +4,7 @@ IBM Cloud Monitoring with Sysdig es un sistema que permite obtener una visión o
 ## Índice  :bookmark_tabs:
 1. [Pre-Requisitos](#Pre-Requisitos-pencil).
 2. [Paso 1. Verificación de conectividad](#Paso-1).
-3. [Paso 2. Ingreso a interfaz gráfica](#Paso-2.-Ingreso-a-interfaz-gráfica-globe_with_meridians).
+3. [Paso 2. Ingreso a interfaz gráfica](#Paso-2.).
 4. [Paso 3. Instalación de herramienta Prometheus y selección de colectores](#Paso-3.-Instalación-de-herramienta-Prometeus-y-selección-de-colectores-paperclip)
 5. [Paso 4. Recopilación de métricas ejecutando Prometheus](#Paso-4.-Recopilación-de-métricas-ejecutando-Prometheus-hammer)
 6. [Paso 5. Ejecución de Prometheus](#Paso-5.-Ejecución-de-Prometheus-heavy_check_mark)
@@ -13,7 +13,8 @@ IBM Cloud Monitoring with Sysdig es un sistema que permite obtener una visión o
 ## Pre-Requisitos :pencil:
 ## Paso 1 
 ### Verificación de conectividad :white_check_mark:
-## Paso 2. Ingreso a interfaz gráfica :globe_with_meridians:
+## Paso 2. 
+### Ingreso a interfaz gráfica :globe_with_meridians:
 ## Paso 3. Instalación de herramienta Prometheus y selección de colectores  :paperclip:
 ## Paso 4. Recopilación de métricas ejecutando Prometheus :hammer:
 Para monitorear un sistema Windows con *IBM Cloud Monitoring with Sysdig* se emplea *Prometheus*, que es un sistema de supervisión para enviar y recopilar las métricas desde Windows. A continuación, se presentan los pasos para realizar la recopilación.
