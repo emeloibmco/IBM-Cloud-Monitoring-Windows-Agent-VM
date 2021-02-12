@@ -55,8 +55,8 @@ remote_write:
 Donde,
 - REGION es la región. Un ejemplo puede ser *us_south.*
 - HOSTNAME es el nombre del sistema Windows.
-- JOBNAME es un atributo personalizado.
-- ENDPOINT 
+- JOBNAME es un atributo personalizado que identifica el rol del nodo cuyos datos está recopilando.
+- ENDPOINT es el punto final del recopilador de Sysdig y se determina según la región. Para ver la lista de puntos finales consulta [Regiones y Puntos Finales](https://cloud.ibm.com/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-endpoints#endpoints_ingestion).
  
 
 
