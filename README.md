@@ -14,8 +14,9 @@ Paso 4. recopilar métricas opción 2 (D)
 Paso 5. Ejecutar y esperar (D)
 Paso 6. Visualizar dashboard (D)
 
-
-
 # Imagen
 <p align="center"><img width="520" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/prueba_Trim.gif"></p>
 
+
+
+## Paso 4. Recopilar métricas ejecutando Prometehus.
