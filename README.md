@@ -5,7 +5,7 @@ IBM Cloud Monitoring with Sysdig es un sistema que permite obtener una visión o
 1. [Pre-Requisitos](#Pre-Requisitos-pencil).
 2. [Verificación de conectividad](#Verificación-de-conectividad).
 3. [Ingreso a interfaz gráfica](#Ingreso-a-interfaz-gráfica).
-4. [Recopilación de métricas]()
+4. [Recopilación de métricas](#Recopilación-de-métricas)
 
 ## Pre-Requisitos :pencil:
 ## Verificación de conectividad :white_check_mark:
@@ -27,7 +27,7 @@ Paso 6. Visualizar dashboard (D)
 
 
 
-## Paso 4. Recopilar métricas ejecutando Prometheus :hammer:
+## 4. Recopilación de métricas :hammer:
 Para monitorear un sistema Windows con *IBM Cloud Monitoring with Sysdig* se emplea *Prometheus*, que es un sistema de supervisión para enviar y recopilar las métricas desde Windows. A continuación, se presentan los pasos para realizar la recopilación.
 
 1. Descargue el sistema de supervisión [*prometheus-2.24.1.windows-amd64.zip*.](https://prometheus.io/download/) 
@@ -86,6 +86,6 @@ Para ejecutar *Prometheus*, abra una ventana de *PowerShell* y acceda a la carpe
 
 
 ## Paso 6. Visualizar Dashboard :chart_with_upwards_trend:
-Para visualizar y supervisar las métricas del sistema Windows, dentro de la plataforma plataforma [IBM Cloud](https://cloud.ibm.com/login), ingrese a *Observabilidad* y posteriormente *Supervisión*. Dirijase a la opción *Visualizar Control de Panel* y elija allpi la opción *Visualizar Sysgid*. Una vez se abre la ventana del agente Sysdig, de click en la pestaña *Dashboards* y en el ícono de búsqueda (:mag_right:) escriba *Windows Node Overview*. Si ha realizado correctamente todos los pasos podrá observar un resultado similar al que se observa en la imagen y ya se encontrará monitoreando su sistema Windows.
+Para visualizar y supervisar las métricas del sistema Windows dentro de la plataforma plataforma [IBM Cloud](https://cloud.ibm.com/login), ingrese a *Observabilidad* y posteriormente a *Supervisión*. Dirijase a la opción *Visualizar Control de Panel* y elija allpi la opción *Visualizar Sysgid*. Una vez se abre la ventana del agente Sysdig, de click en la pestaña *Dashboards* y en el ícono de búsqueda (:mag_right:) escriba *Windows Node Overview*. Si ha realizado correctamente todos los pasos podrá observar un resultado similar al que se observa en la imagen y ya se encontrará monitoreando su sistema Windows.
 
 >**_NOTA_**: En caso de que no pueda encontrar la opción de *Windows Node Overview* de forma inmediata a la ejecución de *Prometheus*, por favor tenga paciencia. La aparición de las métricas puede tardar varios minutos.
