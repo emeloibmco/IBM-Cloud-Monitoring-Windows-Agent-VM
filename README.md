@@ -66,6 +66,8 @@ Donde,
 - Haga click en la pestaña *Supervisión*.
 - Haga click en el botón *Configurar métricas de la plataforma*, seleccione la instancia de la región y la opción *IBM Cloud Monitoring with Sysdig*, tal y como se muestra en la imagen.
  
+ 
+## Paso 5. Ejecutar Prometehus :heavy_check_mark:
 
 
 
