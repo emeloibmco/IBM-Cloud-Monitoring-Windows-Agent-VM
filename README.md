@@ -26,12 +26,12 @@ Para monitorear un sistema Windows con *IBM Cloud Monitoring with Sysdig* se emp
 2. Descomprima el archivo descargado y guardelo en una carpeta a la que pueda acceder fácilmente.
 3. Cree un archivo llamado *sysdigapikey* en un bloc de notas, agregue el *Sysdig Monitor API Token* (que lo puede encontrar como se observa en la imagen) y guarde el archivo en la misma carpeta del paso 2. Posteriormente abra una ventana en *PowerShell*, ingrese a la carpeta donde se encuentra ubicado el archivo y copie el siguiente comando 
 ```
-**_.\sysdigapikey.txt sysdigapikey_**. 
+.\sysdigapikey.txt sysdigapikey
 ```
 Con este comando puede eliminar la extensión .txt del archivo creado.
 4. Ingrese a la carpeta del paso 2 y busque el archivo *prometheus.yml*. Abralo en un block de notas sin cambiar el formato y coloque el siguiente código, modificando sus variables.
 
-'#' Hola
+<#> Hola
 
 
 
