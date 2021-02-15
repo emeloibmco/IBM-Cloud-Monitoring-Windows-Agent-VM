@@ -37,7 +37,11 @@ Una vez se cuente con el acceso, se debe ingresar el **Nombre de usuario** y **c
 
 ## Paso 3
 ### Instalación de herramienta Prometheus y selección de colectores  :paperclip:
-Prometheus WMI Exporter se ejecuta como un servicio de Windows, puede configurar las métricas que desea supervisar mediante la habilitación de recopiladores, se tiene la opción de habilitar los siguientes recopiladores: 
+Prometheus WMI Exporter se ejecuta como un servicio de Windows, puede configurar las métricas que desea supervisar mediante la habilitación de colectores, se tiene la opción de habilitar los siguientes colectores: 
+* CPU
+* Métricas del sistema de cálculo (cs)
+* Métricas de disco
+* Métricas de interfaz de red
 
 
 
