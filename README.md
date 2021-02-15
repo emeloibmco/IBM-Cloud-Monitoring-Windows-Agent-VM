@@ -2,9 +2,9 @@
 IBM Cloud Monitoring with Sysdig es un sistema que permite obtener una visión operativa ofreciendo funciones de supervisión, solución de problemas, definición de alertas y diseñar paneles personalizados. Esta guía esta enfocada a supervisar un entorno Windows con IBM Cloud Monitoring with Sysdig, se debe tener en cuenta que el agente sysdig no se puede instalar en una plataforma Windows, por ello se debe instalar la herramienta llamada Prometheus WMI Exporter para obtener las métricas del sistema Windows.
 
 ## Índice  :bookmark_tabs:
-1. [Pre-Requisitos](#Pre-Requisitos-pencil).
-2. [Paso 1. Verificación de conectividad](#Paso-1).
-3. [Paso 2. Ingreso a interfaz gráfica](#Paso-2).
+1. [Pre-Requisitos](#Pre-Requisitos-pencil)
+2. [Paso 1. Verificación de conectividad](#Paso-1)
+3. [Paso 2. Ingreso a interfaz gráfica](#Paso-2)
 4. [Paso 3. Instalación de herramienta Prometheus y selección de colectores](#Paso-3)
 5. [Paso 4. Recopilación de métricas ejecutando Prometheus](#Paso-4)
 6. [Paso 5. Ejecución de Prometheus](#Paso-5)
@@ -41,7 +41,7 @@ Prometheus WMI Exporter se ejecuta como un servicio de Windows, puede configurar
 * CPU
 * Métricas del sistema de cálculo (cs)
 * Métricas de disco
-* Métricas de interfaz de red
+* Métricas de interfaz de red <br>
 Para configurar Prometheus WMI Exporter en el sistema Windows:
 1. Teniendo el acceso remoto a la VSI Windows, descargue dentro del sistema  <a href="https://github.com/prometheus-community/windows_exporter/releases"> Prometheus Exporter</a>. 
 >**NOTA**: Se recomienda descargar la versión 12.
