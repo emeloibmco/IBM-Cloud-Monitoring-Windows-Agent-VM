@@ -42,6 +42,7 @@ Prometheus WMI Exporter se ejecuta como un servicio de Windows, puede configurar
 * Métricas del sistema de cálculo (cs)
 * Métricas de disco
 * Métricas de interfaz de red <br>
+
 Para configurar Prometheus WMI Exporter en el sistema Windows:
 1. Teniendo el acceso remoto a la VSI Windows, descargue dentro del sistema  <a href="https://github.com/prometheus-community/windows_exporter/releases"> Prometheus Exporter</a>. 
 >**NOTA**: Se recomienda descargar la versión 12.
