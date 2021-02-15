@@ -19,7 +19,7 @@ IBM Cloud Monitoring with Sysdig es un sistema que permite obtener una visión o
 ## Paso 1
 ### Verificación de conectividad :white_check_mark:
 El acceso VPN de IBM Cloud permite a los usuarios gestionar todos los servidores de forma remota y segura en la red privada de IBM Cloud. Para tener acceso remoto a la VSI de Windows se debe establecer primero la conexion VPN, esta se realiza por medio de **MotionPro**. 
-Para añadir una nueva conexion VPN seleccione **Add profile**. A continuación, ingrese: **site name**, **host**, **username** y **password**. Verfique que **mode** este en VPN. <br>
+Para añadir una nueva conexion VPN seleccione **Add profile**. A continuación, ingrese: **site name**, **host**, **username** y **password**. Verifique que **mode** este en VPN. <br>
 <p align="center"><img width="600" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/windowssysdig/Paso1.gif"></p>
 
 >**NOTA**: Para consultar el **host** según la región consulte <a href="https://cloud.ibm.com/docs/iaas-vpn?topic=iaas-vpn-available-vpn-endpoints">Puntos finales de VPN disponibles</a>. El **username** y **password** se pueden consultar en la plataforma de IBM Cloud Catalogo > Acceso (IAM) > Usuarios > Detalles de Usuario > Contraseña de VPN . <br>
@@ -42,8 +42,14 @@ Prometheus WMI Exporter se ejecuta como un servicio de Windows, puede configurar
 * Métricas del sistema de cálculo (cs)
 * Métricas de disco
 * Métricas de interfaz de red
-
-
+Para configurar Prometheus WMI Exporter en el sistema Windows:
+1. Teniendo el acceso remoto a la VSI Windows, descargue dentro del sistema  <a href="https://cloud.ibm.com/docs/iaas-vpn?topic=iaas-vpn-available-vpn-endpoints"> Prometheus Exporter</a>. 
+>**NOTA**:Se recomienda descargar la versión 12.
+2. Elija los colectores que incluyan las métricas que usted desea monitorear con Sysdig.
+3. Ejecute Prometheus WMI Exporter, incluyendo los colectores elegidos, en este caso se escoge recopilar métricas del sistema de cálculo (cs), métricas de CPU, métricas de disco y métricas de E/S de interfaz de red:
+```.\wmi_exporter-0.12.0-amd64.exe--collectors.enabled "os,cpu,logical_disk,net,system"
+```
+>**NOTA**:Al ejecutar este comando, los colectores se quedarán ejecutando, por lo tanto para seguir el proceso abra otro Windows PowerShell o Command Prompt.
 
 
 
