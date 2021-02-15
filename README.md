@@ -128,9 +128,9 @@ Para visualizar las métricas de Sysdig en la plataforma [IBM Cloud](https://clo
 >**_NOTA_**: En caso de no poder visualizar la opción de *Windows Node Overview* de forma inmediada a la ejecución de *Prometheus*, por favor tenga paciencia. La visualización de las métricas puede tardar varios minutos.
 
 ## Autores ✒️
-Laura Sofia Salcedo
-Diana Andrea Espitia
-Paula Pachón
+*Laura Sofia Salcedo
+*Diana Andrea Espitia
+*Paula Pachón
 
 
 
