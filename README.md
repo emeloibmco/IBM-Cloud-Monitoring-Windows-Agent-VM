@@ -61,7 +61,7 @@ Para monitorear un sistema Windows con *IBM Cloud Monitoring with Sysdig* se emp
 
 1. Descargue el sistema de supervisión [*prometheus-2.24.1.windows-amd64.zip*.](https://prometheus.io/download/) 
 2. Descomprima el archivo descargado y guardelo en una carpeta a la que pueda acceder fácilmente (por ejemplo la carpeta de Descargas).
-3. Cree un archivo llamado *sysdigapikey* en un bloc de notas, agregue el *Sysdig Monitor API Token* (que lo puede encontrar como se observa en la imagen) y guarde el archivo en la misma carpeta del paso 2. Posteriormente abra una ventana en *PowerShell*, ingrese a la carpeta donde se encuentra ubicado el archivo y copie el siguiente comando: 
+3. Cree un archivo llamado *sysdigapikey* en un bloc de notas, agregue el *Sysdig Monitor API Token* (que lo puede encontrar como se observa en la imagen) y guarde el archivo en la misma carpeta del paso 2. Posteriormente abra una ventana en *Windows PowerShell*, ingrese a la carpeta donde se encuentra ubicado el archivo y copie el siguiente comando: 
 ```
 .\sysdigapikey.txt sysdigapikey
 ```
@@ -70,7 +70,7 @@ Para monitorear un sistema Windows con *IBM Cloud Monitoring with Sysdig* se emp
    <p align="center"><img width="600" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/windowssysdig/apitoken.gif"></p>
    
 
-4. Ingrese a la carpeta del paso 2, acceda a la carpeta de *Prometheus* y busque el archivo *prometheus.yml*. Abralo en un bloc de notas sin cambiar el formato y modifique la sección *scrape_configs*, de la siguiente manera:
+4. Ingrese a la carpeta del paso 2, acceda a la carpeta de *Prometheus* y busque el archivo *prometheus.yml*. Ábralo en un bloc de notas sin cambiar el formato y modifique la sección *scrape_configs*, de la siguiente manera:
 ```
 scrape_configs:
   # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
@@ -96,7 +96,7 @@ Donde,
 - REGION es la región. Un ejemplo puede ser *us_south.*
 - HOSTNAME es el nombre del sistema Windows.
 - JOBNAME es un atributo personalizado que identifica el rol del nodo cuyos datos está recopilando.
-- ENDPOINT es el punto final del recopilador de Sysdig y se determina según la región. Para ver la lista de puntos finales consulte [Regiones y Puntos Finales](https://cloud.ibm.com/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-endpoints#endpoints_ingestion).
+- ENDPOINT es el punto final del recopilador de Sysdig y se determina según la región. Para ver la lista de puntos finales consulte [Regions and endpoints](https://cloud.ibm.com/docs/Monitoring-with-Sysdig?topic=Monitoring-with-Sysdig-endpoints#endpoints_ingestion).
 
 >**_NOTA_**: Como puede observar, en este caso en la linea de comando *bearer_token_file:* el archivo *sysdigapikey* se encuentra ubicado en la carpeta de descargas. Coloque la ubicación del archivo en base a su carpeta. Por otro lado, tenga cuidado con la identación en el archivo *prometheus.yml*, de lo contrario puede presentar problemas durante la ejecución de *Prometheus*.
 
@@ -111,13 +111,13 @@ Donde,
 
 ## Paso 5
 ### Ejecución de Prometheus :heavy_check_mark:
-Para ejecutar *Prometheus*, abra una ventana de *PowerShell* y acceda a la carpeta en donde se encuentran los archivos. Posteriormente ejecute el comando:
+Para ejecutar *Prometheus*, abra una ventana de *Windows PowerShell* y acceda a la carpeta en donde se encuentran los archivos. Posteriormente ejecute el comando:
 ```
 .\prometheus.exe 
 ```
 >**_NOTA 1_**: Es importante que los colectores del **Paso 3**, se estén ejecutando. 
 
->**_NOTA 2_**: Una vez ejecute *Prometheus*, no cierre la ventana la de *PowerShell*.
+>**_NOTA 2_**: Una vez ejecute *Prometheus*, no cierre la ventana la de *Windows PowerShell*.
 
 ## Paso 6
 ### Visualización de métricas de Windows en Sysdig :chart_with_upwards_trend:
