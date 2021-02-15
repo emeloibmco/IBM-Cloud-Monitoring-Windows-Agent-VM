@@ -43,15 +43,14 @@ Prometheus WMI Exporter se ejecuta como un servicio de Windows, puede configurar
 * Métricas de disco
 * Métricas de interfaz de red
 Para configurar Prometheus WMI Exporter en el sistema Windows:
-1. Teniendo el acceso remoto a la VSI Windows, descargue dentro del sistema  <a href="https://cloud.ibm.com/docs/iaas-vpn?topic=iaas-vpn-available-vpn-endpoints"> Prometheus Exporter</a>. 
+1. Teniendo el acceso remoto a la VSI Windows, descargue dentro del sistema  <a href="https://github.com/prometheus-community/windows_exporter/releases"> Prometheus Exporter</a>. 
 >**NOTA**: Se recomienda descargar la versión 12.
 2. Elija los colectores que incluyan las métricas que usted desea monitorear con Sysdig.
 3. Ejecute Prometheus WMI Exporter, incluyendo los colectores elegidos, en este caso se escoge recopilar métricas del sistema de cálculo (cs), métricas de CPU, métricas de disco y métricas de E/S de interfaz de red:
 ```
 .\wmi_exporter-0.12.0-amd64.exe--collectors.enabled "os,cpu,logical_disk,net,system"
-
 ```
->**NOTA**:Al ejecutar este comando, los colectores se quedarán ejecutando, por lo tanto para seguir el proceso abra otro Windows PowerShell o Command Prompt.
+>**NOTA**: Al ejecutar este comando, los colectores se quedarán ejecutando, por lo tanto para seguir el proceso abra otro Windows PowerShell o Command Prompt.
 
 
 
