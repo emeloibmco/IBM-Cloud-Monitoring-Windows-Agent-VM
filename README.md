@@ -34,6 +34,7 @@ Una vez se cuente con el acceso, se debe ingresar el **Nombre de usuario** y **c
 >**NOTA**: Para consultar el **Nombre de usuario** y **contraseña** ingrese a la Plataforma de IBM Cloud Recursos > Dispositivos y ubicar la sección de contraseñas de la VSI. 
 
 <p align="center"><img width="600" src="https://github.com/emeloibmco/IBM-Cloud-Monitoring-Windows-Agent-VM/blob/main/windowssysdig/Paso2.gif"></p>
+
 ## Paso 3
 ### Instalación de herramienta Prometheus y selección de colectores  :paperclip:
 Prometheus WMI Exporter se ejecuta como un servicio de Windows, puede configurar las métricas que desea supervisar mediante la habilitación de recopiladores, se tiene la opción de habilitar los siguientes recopiladores: 
