@@ -63,7 +63,7 @@ Para monitorear un sistema Windows con *IBM Cloud Monitoring with Sysdig* se emp
 2. Descomprima el archivo descargado y guardelo en una carpeta a la que pueda acceder fácilmente (por ejemplo la carpeta de Descargas).
 3. Cree un archivo llamado *sysdigapikey* en un bloc de notas, agregue el *Sysdig Monitor API Token* (que lo puede encontrar como se observa en la imagen) y guarde el archivo en la misma carpeta del paso 2. Posteriormente abra una ventana en *Windows PowerShell*, ingrese a la carpeta donde se encuentra ubicado el archivo y copie el siguiente comando: 
 ```
-.\sysdigapikey.txt sysdigapikey
+copy .\sysdigapikey.txt sysdigapikey
 ```
    Con este comando puede copiar el mismo archivo sin ninguna extensión determinada. 
    
